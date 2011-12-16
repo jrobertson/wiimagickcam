@@ -20,6 +20,7 @@ class WiiMagickCam
       swm.led = 12
 
       filename = raw_filename  % i.to_s
+      puts 'saving ' + filename
       mcam.snapshot(filename)
       i += 1
       swm.led = 1
